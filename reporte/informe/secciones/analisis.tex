@@ -1,0 +1,46 @@
+\section{Análisis}
+
+Los conjuntos \textbf{PRIMERO} y \textbf{SIGUIENTE} son estructuras fundamentales en el diseño de
+analizadores sintácticos predictivos (LL(1)). Su cálculo correcto a partir de una gramática libre
+de contexto determina qué terminal puede iniciar una derivación (\textbf{PRIMERO}) y qué terminal
+puede aparecer inmediatamente a la derecha de un no terminal en alguna forma sentencial
+(\textbf{SIGUIENTE}).
+
+Para el cómputo de ambos conjuntos se adoptó un enfoque iterativo de punto fijo: se aplican las
+reglas de inferencia de manera repetida hasta que ningún conjunto varía entre dos iteraciones
+consecutivas. Este método garantiza la convergencia para cualquier gramática libre de contexto
+finita.
+
+\subsection*{Reglas de PRIMERO}
+
+\begin{enumerate}
+  \item Si $X$ es un terminal, entonces $\text{PRIMERO}(X) = \{X\}$.
+  \item Si existe la producción $X \to \varepsilon$, se añade $\varepsilon$ a $\text{PRIMERO}(X)$.
+  \item Para cada producción $X \to Y_1\, Y_2\, \cdots\, Y_n$:
+  \begin{itemize}
+    \item Se añade $\text{PRIMERO}(Y_1) - \{\varepsilon\}$ a $\text{PRIMERO}(X)$.
+    \item Si $\varepsilon \in \text{PRIMERO}(Y_i)$ para todo $i < k$, se añade también
+          $\text{PRIMERO}(Y_k) - \{\varepsilon\}$.
+    \item Si $\varepsilon \in \text{PRIMERO}(Y_i)$ para todo $i$, se añade $\varepsilon$ a
+          $\text{PRIMERO}(X)$.
+  \end{itemize}
+\end{enumerate}
+
+\subsection*{Reglas de SIGUIENTE}
+
+\begin{enumerate}
+  \item $\$ \in \text{SIGUIENTE}(S)$ donde $S$ es el símbolo inicial de la gramática.
+  \item Para cada producción $A \to \alpha\, B\, \beta$:
+  \begin{itemize}
+    \item Se añade $\text{PRIMERO}(\beta) - \{\varepsilon\}$ a $\text{SIGUIENTE}(B)$.
+    \item Si $\varepsilon \in \text{PRIMERO}(\beta)$ (o $\beta = \varepsilon$), se añade
+          $\text{SIGUIENTE}(A)$ a $\text{SIGUIENTE}(B)$.
+  \end{itemize}
+\end{enumerate}
+
+\vspace{1cm}
+
+El proyecto implementa ambos algoritmos en Python mediante una arquitectura modular dividida en
+tres capas: modelos, persistencia y presentación. La capa de modelos define la clase
+\texttt{Gramatica}; la capa de persistencia agrupa los módulos de lectura de archivo y de cómputo
+de los conjuntos; y la capa de presentación contiene la interfaz gráfica construida con Tkinter.

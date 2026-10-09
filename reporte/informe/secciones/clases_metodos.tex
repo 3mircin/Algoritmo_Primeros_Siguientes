@@ -1,0 +1,87 @@
+\section{Clases y métodos implementados por cada subequipo}
+
+\textbf{Cortez Vega y Lujan De la Rosa:}
+
+\begin{enumerate}
+  \item \textbf{Módulo Algoritmo PRIMERO} (\texttt{algoritmo\_primeros.py}): Implementa la
+    función \texttt{calcular\_primeros}, que calcula los conjuntos PRIMERO para todos los
+    símbolos de la gramática mediante un algoritmo iterativo de punto fijo. La función recibe
+    el símbolo de consulta, el diccionario de producciones, un diccionario mutable de conjuntos
+    \texttt{primeros} y la lista de terminales. Inicializa cada terminal con su propio conjunto
+    y cada no terminal con el conjunto vacío; luego itera hasta que no haya cambios.
+
+  \item \textbf{Módulo Algoritmo SIGUIENTE} (\texttt{algoritmo\_siguientes.py}): Implementa
+    dos funciones:
+    \begin{enumerate}[label=\alph*.]
+      \item \textbf{\texttt{\_primero\_secuencia}}: función auxiliar que calcula
+        $\text{PRIMERO}$ de una secuencia de símbolos e indica si toda la secuencia puede
+        derivar en $\varepsilon$.
+      \item \textbf{\texttt{calcular\_siguientes}}: función principal que aplica el algoritmo
+        de SIGUIENTE mediante iteración de punto fijo. Inicializa el símbolo inicial con
+        $\{\$\}$ y, para cada producción $A \to \alpha\, B\, \beta$, propaga
+        $\text{PRIMERO}(\beta)$ y, cuando corresponde, $\text{SIGUIENTE}(A)$ hacia
+        $\text{SIGUIENTE}(B)$.
+    \end{enumerate}
+\end{enumerate}
+
+\vspace{0.8cm}
+
+\textbf{Arias Mendoza y Vasquez Moreno:}
+
+\begin{enumerate}
+  \item \textbf{Módulo Gramática} (\texttt{gramatica.py}): Define la clase \texttt{Gramatica},
+    que representa una gramática libre de contexto. Sus atributos son:
+    \texttt{terminales}, \texttt{no\_terminales}, \texttt{simbolo\_inicial} y
+    \texttt{producciones} (diccionario de cabeza a lista de cuerpos). El método
+    \texttt{agregar\_produccion} inserta una nueva regla de producción al diccionario.
+
+  \item \textbf{Módulo Lector de Archivo} (\texttt{lector\_archivo.py}): Implementa la función
+    \texttt{cargar\_gramatica\_desde\_archivo}, que lee un archivo \texttt{.txt} codificado en
+    UTF-8 y construye un objeto \texttt{Gramatica}. Soporta dos formatos:
+    \begin{enumerate}[label=\alph*.]
+      \item \textbf{Formato simple}: solo producciones; terminales y no terminales se infieren
+        automáticamente — cualquier símbolo que encabece una producción es no terminal, el
+        resto son terminales.
+      \item \textbf{Formato con encabezados}: las dos primeras líneas declaran explícitamente
+        los terminales y no terminales; las producciones inician en la tercera línea.
+    \end{enumerate}
+    Acepta producciones vacías escritas como $\varepsilon$, \texttt{e} o \texttt{epsilon}
+    (sin distinción de mayúsculas) y lanza \texttt{ValueError} ante cualquier producción
+    malformada.
+\end{enumerate}
+
+\vspace{0.8cm}
+
+\textbf{Carrasco Pacheco y Nicolas Vasquez:}
+
+\begin{enumerate}
+  \item \textbf{Módulo de Estilos} (\texttt{estilos.py}): Define la paleta de colores
+    (\texttt{COLORES}), la función \texttt{configurar\_estilos} que aplica los temas
+    \texttt{ttk} globalmente, y la función \texttt{crear\_superficie} que genera marcos con
+    un diseño visual uniforme para todas las secciones de la interfaz.
+
+  \item \textbf{Módulo Tabla Base} (\texttt{tabla\_base.py}): Widget \texttt{Treeview}
+    reutilizable que incluye barras de desplazamiento vertical y horizontal. Permite
+    configurar las columnas, sus encabezados, anchos y alineación, y es utilizado como
+    base por los demás módulos de presentación.
+
+  \item \textbf{Módulo Tabla Conjuntos} (\texttt{tabla\_conjuntos.py}): Especializa la tabla
+    base para mostrar los conjuntos PRIMERO o SIGUIENTE, presentando un no terminal por
+    fila y su conjunto correspondiente como cadena de símbolos separados por comas.
+
+  \item \textbf{Módulo Ventana de Resultados} (\texttt{ventana\_primeros\_siguientes.py}):
+    Implementa la clase \texttt{VentanaPrimerosSiguientes}, una ventana secundaria con dos
+    pestañas: una para los conjuntos PRIMERO y otra para los conjuntos SIGUIENTE. Cada pestaña
+    muestra una \texttt{TablaConjuntos} con los resultados del análisis.
+
+  \item \textbf{Módulo Interfaz Principal} (\texttt{interfaz.py}): Implementa la clase
+    \texttt{InterfazCompilador}, punto de entrada de la aplicación. Proporciona:
+    \begin{itemize}
+      \item Carga de archivos \texttt{.txt} mediante diálogo del sistema operativo.
+      \item Editor de solo lectura con numeración de líneas para inspeccionar la gramática.
+      \item Botón \textbf{Analizar} que invoca los módulos de PRIMERO y SIGUIENTE y abre la
+            ventana de resultados.
+      \item Botón \textbf{Limpiar} para reiniciar el estado de la aplicación.
+      \item Barra de estado con mensajes informativos sobre el progreso del análisis.
+    \end{itemize}
+\end{enumerate}

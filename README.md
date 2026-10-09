@@ -212,3 +212,16 @@ Archivo .txt
 ## Capturas de pantalla
 
 > *Agrega aquí capturas de la ventana principal y de la ventana de resultados.*
+
+---
+
+## Integrantes
+
+**Equipo 1 — Universidad Tecnológica de la Mixteca**
+
+- Cortez Vega Jaime Fabian
+- Carrasco Pacheco Levi Josue
+- Arias Mendoza Angel Adrian
+- Vazquez Moreno Zair de Jesus
+- Nicolas Vazquez Joel Osmar
+- Lujan de la Rosa Cristian Emir

@@ -1,0 +1,44 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{lscape}
+\usepackage{parskip}
+\usepackage{setspace}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+
+% Secciones en itálica sin numerar
+\titleformat{\section}[block]{\large\itshape}{}{0em}{}
+\titlespacing{\section}{0pt}{24pt}{12pt}
+\setcounter{secnumdepth}{0}
+
+% Columnas de tabla con justificación y ancho fijo
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+\sloppy
+
+\input{secciones/portada}
+\newpage
+\input{secciones/analisis}
+\newpage
+\input{secciones/asignacion}
+\newpage
+\input{secciones/clases_metodos}
+\newpage
+\input{secciones/avances}
+\newpage
+\input{secciones/conclusiones}
+\newpage
+\input{secciones/referencias}
+
+\end{document}

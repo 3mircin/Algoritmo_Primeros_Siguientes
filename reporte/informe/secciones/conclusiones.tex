@@ -1,0 +1,25 @@
+\section{Conclusiones}
+
+\setlength{\parindent}{1.5cm}
+
+\indent Llevar a cabo este proyecto nos permitió comprender de manera práctica el papel de los
+conjuntos PRIMERO y SIGUIENTE en la construcción de analizadores sintácticos predictivos. A
+diferencia del análisis léxico —que reconoce tokens mediante autómatas finitos— el análisis
+sintáctico predictivo requiere razonar sobre las derivaciones posibles de la gramática, y los
+conjuntos PRIMERO y SIGUIENTE son la herramienta que hace posible tomar esas decisiones sin
+necesidad de retroceso.
+
+\indent La implementación del algoritmo iterativo de punto fijo nos exigió comprender a fondo las
+dependencias entre los conjuntos de distintos no terminales: un cambio en PRIMERO de un símbolo
+puede propagarse hacia los conjuntos SIGUIENTE de otros. Manejar correctamente estas dependencias
+mediante la repetición controlada de las reglas de inferencia fue el reto central del proyecto.
+
+\indent Desde el punto de vista del diseño de software, la separación en capas —modelos,
+persistencia y presentación— facilitó la división del trabajo entre sub equipos y permitió
+desarrollar y probar cada módulo de forma independiente antes de la integración. La interfaz
+gráfica, construida con Tkinter, añadió valor al proyecto al hacer accesible el cálculo de los
+conjuntos a cualquier usuario sin necesidad de conocer el código.
+
+\indent En conjunto, el proyecto consolidó nuestra comprensión de la segunda fase del diseño de
+compiladores y reforzó buenas prácticas de colaboración, modularidad y documentación que
+continuaremos aplicando en etapas posteriores del curso.

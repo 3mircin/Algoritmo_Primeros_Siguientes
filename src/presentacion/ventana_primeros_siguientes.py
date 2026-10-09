@@ -50,8 +50,8 @@ class VentanaPrimerosSiguientes(tk.Toplevel):
         # Creación de pestañas
         pestaña_primeros = tk.Frame(pestañas, bg=COLORES["superficie"])
         pestaña_siguientes = tk.Frame(pestañas, bg=COLORES["superficie"])
-        pestañas.add(pestaña_primeros, text="  1. Primeros (First)  ")
-        pestañas.add(pestaña_siguientes, text="  2. Siguientes (Follow)  ")
+        pestañas.add(pestaña_primeros, text="  1. Primeros")
+        pestañas.add(pestaña_siguientes, text="  2. Siguientes")
 
         # Inserción de las tablas en cada pestaña
         self.tabla_primeros = TablaConjuntos(pestaña_primeros, "Conjuntos de Primeros")

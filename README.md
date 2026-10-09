@@ -16,6 +16,7 @@ Desarrollado como proyecto del segundo parcial de la materia **Compiladores** �
 - [Archivos de prueba](#archivos-de-prueba)
 - [Algoritmos implementados](#algoritmos-implementados)
 - [Estructura del proyecto](#estructura-del-proyecto)
+- [Reporte](#reporte)
 - [Capturas de pantalla](#capturas-de-pantalla)
 
 ---
@@ -176,6 +177,23 @@ Algoritmo_Primeros_Siguientes/
 │   ├── Gramatica5.txt
 │   └── Gramatica6.txt
 │
+├── reporte/
+│   └── informe/
+│       ├── InformeActividadesEq1.tex # Documento principal LaTeX
+│       ├── InformeActividadesEq1.pdf # PDF compilado
+│       ├── secciones/
+│       │   ├── portada.tex
+│       │   ├── modelo.tex
+│       │   ├── analisis.tex
+│       │   ├── asignacion.tex
+│       │   ├── clases_metodos.tex
+│       │   ├── avances.tex
+│       │   ├── conclusiones.tex
+│       │   └── referencias.tex
+│       └── imagenes/
+│           ├── logo-utm.png
+│           └── modelo_programa_principal.png
+│
 └── src/
     ├── interfaz.py                   # Punto de entrada — ventana principal
     │
@@ -206,6 +224,35 @@ Archivo .txt
                                                                 ├── TablaConjuntos (Primeros)
                                                                 └── TablaConjuntos (Siguientes)
 ```
+
+---
+
+## Reporte
+
+El directorio `reporte/informe/` contiene el informe de actividades del proyecto escrito en LaTeX. El PDF compilado (`InformeActividadesEq1.pdf`) se incluye directamente en el repositorio.
+
+Para recompilar el PDF desde las fuentes:
+
+```bash
+cd reporte/informe
+pdflatex InformeActividadesEq1.tex
+pdflatex InformeActividadesEq1.tex   # segunda pasada para referencias
+```
+
+> Requiere una distribución LaTeX instalada (TeX Live, MiKTeX o MacTeX).
+
+El informe cubre las siguientes secciones:
+
+| Sección | Descripción |
+| --- | --- |
+| Portada | Datos del equipo, materia y período |
+| Modelo del programa | Diagrama de arquitectura en capas |
+| Análisis | Descripción formal de los algoritmos PRIMERO y SIGUIENTE |
+| Asignación de actividades | Distribución de tareas por sub equipo |
+| Clases y módulos | Descripción técnica de cada módulo implementado |
+| Avances | Tabla de avances diarios por integrante |
+| Conclusiones | Reflexiones sobre el proceso y los resultados |
+| Referencias | Bibliografía utilizada |
 
 ---
 

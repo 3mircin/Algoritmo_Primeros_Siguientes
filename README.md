@@ -246,8 +246,9 @@ El informe cubre las siguientes secciones:
 | Sección | Descripción |
 | --- | --- |
 | Portada | Datos del equipo, materia y período |
-| Modelo del programa | Diagrama de arquitectura en capas |
-| Análisis | Descripción formal de los algoritmos PRIMERO y SIGUIENTE |
+| Índice | Tabla de contenidos generada automáticamente |
+| Análisis | Algoritmo de Primero y Algoritmo de Siguiente (descripción formal) |
+| Modelo del programa | Diagrama de clases y arquitectura en capas |
 | Asignación de actividades | Distribución de tareas por sub equipo |
 | Clases y módulos | Descripción técnica de cada módulo implementado |
 | Avances | Tabla de avances diarios por integrante |

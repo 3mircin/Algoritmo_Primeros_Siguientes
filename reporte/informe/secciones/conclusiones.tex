@@ -2,24 +2,28 @@
 
 \setlength{\parindent}{1.5cm}
 
-\indent Llevar a cabo este proyecto nos permitió comprender de manera práctica el papel de los
-conjuntos PRIMERO y SIGUIENTE en la construcción de analizadores sintácticos predictivos. A
-diferencia del análisis léxico —que reconoce tokens mediante autómatas finitos— el análisis
-sintáctico predictivo requiere razonar sobre las derivaciones posibles de la gramática, y los
-conjuntos PRIMERO y SIGUIENTE son la herramienta que hace posible tomar esas decisiones sin
-necesidad de retroceso.
+\indent El desarrollo del presente proyecto permitió al equipo comprender de manera rigurosa y
+práctica el papel que desempeñan los conjuntos \textbf{PRIMERO} y \textbf{SIGUIENTE} en la
+construcción de analizadores sintácticos predictivos. A diferencia del análisis léxico —que
+reconoce unidades léxicas mediante autómatas finitos deterministas— el análisis sintáctico
+predictivo exige razonar sobre las derivaciones posibles de la gramática; los conjuntos
+\textbf{PRIMERO} y \textbf{SIGUIENTE} constituyen la herramienta formal que hace posible tomar
+tales decisiones de manera determinista y sin necesidad de retroceso.
 
-\indent La implementación del algoritmo iterativo de punto fijo nos exigió comprender a fondo las
-dependencias entre los conjuntos de distintos no terminales: un cambio en PRIMERO de un símbolo
-puede propagarse hacia los conjuntos SIGUIENTE de otros. Manejar correctamente estas dependencias
-mediante la repetición controlada de las reglas de inferencia fue el reto central del proyecto.
+\indent La implementación del algoritmo iterativo de punto fijo exigió un análisis cuidadoso de
+las dependencias entre los conjuntos de distintos no terminales: una modificación en
+$\text{PRIMERO}(X)$ puede propagarse hacia los conjuntos $\text{SIGUIENTE}$ de otros símbolos
+en cadena. El manejo correcto de dichas dependencias mediante la repetición controlada de las
+reglas de inferencia representó el núcleo algorítmico del proyecto y reforzó la comprensión
+teórica de la convergencia de procesos iterativos de punto fijo.
 
-\indent Desde el punto de vista del diseño de software, la separación en capas —modelos,
-persistencia y presentación— facilitó la división del trabajo entre sub equipos y permitió
-desarrollar y probar cada módulo de forma independiente antes de la integración. La interfaz
-gráfica, construida con Tkinter, añadió valor al proyecto al hacer accesible el cálculo de los
-conjuntos a cualquier usuario sin necesidad de conocer el código.
+\indent Desde la perspectiva del diseño de software, la separación en tres capas —modelos,
+persistencia y presentación— facilitó la distribución del trabajo entre los sub equipos y
+permitió desarrollar y verificar cada módulo de forma independiente antes de la fase de
+integración. La interfaz gráfica construida con Tkinter añadió valor práctico al sistema al
+hacer accesible el cálculo de los conjuntos a cualquier usuario, sin requerir conocimiento
+del código fuente.
 
-\indent En conjunto, el proyecto consolidó nuestra comprensión de la segunda fase del diseño de
-compiladores y reforzó buenas prácticas de colaboración, modularidad y documentación que
-continuaremos aplicando en etapas posteriores del curso.
+\indent En síntesis, el proyecto consolidó la comprensión de la segunda fase en el diseño de
+compiladores y reforzó buenas prácticas de ingeniería de software —modularidad, pruebas
+incrementales y documentación— que serán aplicadas en las etapas subsecuentes del curso.

@@ -1,25 +1,74 @@
 \thispagestyle{empty}
+\newgeometry{top=0cm,bottom=0cm,left=0cm,right=0cm}
+{\setlength{\fboxsep}{0pt}%
+
+% ── Banda superior ─────────────────────────────────────────────────────────────
+\noindent\colorbox{colA}{\parbox{\textwidth}{\centering
+  \vspace{1.6cm}
+  {\color{white}\fontsize{17}{21}\selectfont\bfseries
+    Universidad Tecnológica de la Mixteca}\\[0.35cm]
+  {\color{colC}\large Instituto de Computación}
+  \vspace{1.2cm}
+}}%
+\noindent\colorbox{colB}{\parbox{\textwidth}{\vspace{3pt}\vspace{3pt}}}%
+
+% ── Cuerpo de la portada ───────────────────────────────────────────────────────
+\vspace{1.2cm}
 \begin{center}
-
-\includegraphics[width=5cm]{imagenes/logo-utm.png}\\[0.4cm]
-{\large Universidad Tecnológica De La Mixteca}
-
-\vspace{4cm}
-
-Prof. David Martínez Torres\\
-Compiladores\\
-502-A\\
-Equipo 1\\
-Algoritmo de Primeros y Siguientes
-
-\vspace{4cm}
-
-Integrantes:\\[0.2cm]
-Lujan De la Rosa Cristian Emir\\
-Cortez Vega Jaime Fabian\\
-Carrasco Pacheco Levi Josue\\
-Nicolas Vasquez Joel Osmar\\
-Vasquez Moreno Zair De Jesus\\
-Arias Mendoza Angel Adrian
-
+  \includegraphics[width=4cm]{imagenes/logo-utm.png}
 \end{center}
+
+\vspace{0.7cm}
+\begin{center}
+  {\color{colB}\rule{0.72\textwidth}{1.2pt}}
+\end{center}
+
+\vspace{0.9cm}
+\begin{center}
+  \colorbox{colA}{\parbox{0.72\textwidth}{\centering
+    \vspace{0.75cm}
+    {\color{white}\fontsize{20}{26}\selectfont\bfseries
+      Algoritmo de Primeros}\\[0.15cm]
+    {\color{white}\fontsize{20}{26}\selectfont\bfseries
+      y Siguientes}\\[0.45cm]
+    {\color{colC}\large\itshape Informe de Actividades \textemdash{} Equipo 1}
+    \vspace{0.75cm}
+  }}
+\end{center}
+
+\vspace{0.9cm}
+\begin{center}
+  {\color{colB}\rule{0.72\textwidth}{1.2pt}}
+\end{center}
+
+\vspace{0.9cm}
+\begin{center}
+  {\color{colA}\small\bfseries\MakeUppercase{Integrantes del equipo}}\\[0.55cm]
+  \renewcommand{\arraystretch}{1.55}
+  \begin{tabular}{cl}
+    \textcolor{colB}{\rule{4pt}{4pt}} &
+      \textbf{Lujan De la Rosa Cristian Emir} \\
+    \textcolor{colB}{\rule{4pt}{4pt}} &
+      \textbf{Cortez Vega Jaime Fabian} \\
+    \textcolor{colB}{\rule{4pt}{4pt}} &
+      \textbf{Carrasco Pacheco Levi Josue} \\
+    \textcolor{colB}{\rule{4pt}{4pt}} &
+      \textbf{Nicolas Vasquez Joel Osmar} \\
+    \textcolor{colB}{\rule{4pt}{4pt}} &
+      \textbf{Vasquez Moreno Zair De Jesus} \\
+    \textcolor{colB}{\rule{4pt}{4pt}} &
+      \textbf{Arias Mendoza Angel Adrian} \\
+  \end{tabular}
+\end{center}
+
+\vfill
+
+% ── Banda inferior ─────────────────────────────────────────────────────────────
+\noindent\colorbox{colA}{\parbox{\textwidth}{\centering
+  \vspace{0.55cm}
+  {\color{white}\bfseries Prof.\ David Martínez Torres}\\[0.18cm]
+  {\color{colC} Compiladores \quad\textbullet\quad 502-A \quad\textbullet\quad Octubre 2026}
+  \vspace{0.55cm}
+}}%
+}% fin \setlength{\fboxsep}
+\restoregeometry

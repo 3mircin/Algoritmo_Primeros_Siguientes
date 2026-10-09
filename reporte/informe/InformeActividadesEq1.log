@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  9 OCT 2026 11:41
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.8)  9 OCT 2026 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -769,8 +769,13 @@ Underfull \hbox (badness 4242) in paragraph at lines 12--18
 \T1/lmr/m/n/12 en-car-ga-do de par-sear el ar-chi-vo \T1/lmtt/m/n/12 .txt \T1/lmr/m/n/12 y cons-truir el ob-je-to \T1/lmtt/m/n/12 Gramatica\T1/lmr/m/n/12 ;
  []
 
-File: imagenes/modelo_programa_principal.png Graphic file (type bmp)
-<imagenes/modelo_programa_principal.png>
+File: imagenes/modelo_programa_principal copy.png Graphic file (type bmp)
+<imagenes/modelo_programa_principal copy.png>
+
+Overfull \hbox (6.79826pt too wide) in paragraph at lines 32--35
+ [][] 
+ []
+
 )
 
 [2
@@ -810,38 +815,22 @@ Overfull \hbox (24.67644pt too wide) in alignment at lines 5--13
  [] [] [] [] 
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 39.
 
-Overfull \hbox (6.74149pt too wide) in paragraph at lines 47--47
-\T1/lmtt/m/n/10.95 algoritmo_siguientes.py 
- []
-
-
-Overfull \hbox (10.07057pt too wide) in paragraph at lines 76--76
-\T1/lmtt/m/n/10.95 algoritmo_siguientes.py\T1/lmr/m/n/10.95 .|  
- []
-
-
-Overfull \hbox (24.67644pt too wide) in alignment at lines 13--87
+Overfull \hbox (24.67644pt too wide) in alignment at lines 13--81
  [] [] [] [] 
  []
 
 
 
 [8]
-Overfull \hbox (24.67644pt too wide) in alignment at lines 92--100
+Overfull \hbox (24.67644pt too wide) in alignment at lines 86--94
  [] [] [] [] 
  []
 
-Missing character: There is no → ("2192) in font ec-lmtt10!
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 129.
 
-Overfull \hbox (46.69518pt too wide) in paragraph at lines 134--134
-\T1/lmtt/m/n/10.95 ventana_primeros_siguientes.py 
- []
-
-
-Overfull \hbox (24.67644pt too wide) in alignment at lines 100--174
+Overfull \hbox (24.67644pt too wide) in alignment at lines 94--173
  [] [] [] [] 
  []
 
@@ -854,11 +843,9 @@ Missing character: There is no — ("2014) in font ec-lmr10!
 Missing character: There is no — ("2014) in font ec-lmr10!
 Missing character: There is no — ("2014) in font ec-lmr10!
 Missing character: There is no — ("2014) in font ec-lmr10!
-)
+) (./secciones/referencias.tex)
 
-[10] (./secciones/referencias.tex)
-
-[11] (./InformeActividadesEq1.aux
+[10] (./InformeActividadesEq1.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -870,12 +857,12 @@ Package rerunfilecheck Info: File `InformeActividadesEq1.out' has not changed.
 (rerunfilecheck)             Checksum: 40DEDE8D3BF2F7DCCE1FD43674C239A1;1036.
  ) 
 Here is how much of TeX's memory you used:
- 24783 strings out of 473832
- 458509 string characters out of 5729482
- 895199 words of memory out of 5000000
- 47419 multiletter control sequences out of 15000+600000
- 623937 words of font info for 70 fonts, out of 8000000 for 9000
+ 24776 strings out of 473832
+ 458442 string characters out of 5729482
+ 893199 words of memory out of 5000000
+ 47413 multiletter control sequences out of 15000+600000
+ 623618 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,12n,87p,1265b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on InformeActividadesEq1.xdv (11 pages, 58920 bytes).
+Output written on InformeActividadesEq1.xdv (10 pages, 56060 bytes).

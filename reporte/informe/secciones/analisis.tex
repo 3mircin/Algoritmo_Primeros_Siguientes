@@ -11,7 +11,7 @@ reglas de inferencia se aplican de manera repetida hasta que ningún conjunto va
 iteraciones consecutivas. Este método garantiza la convergencia para cualquier gramática libre
 de contexto finita.
 
-\subsection*{Reglas de cómputo de PRIMERO}
+\subsection*{Algoritmo de Primero}
 
 \begin{enumerate}
   \item Si $X$ es un símbolo terminal, entonces $\text{PRIMERO}(X) = \{X\}$.
@@ -27,7 +27,7 @@ de contexto finita.
   \end{itemize}
 \end{enumerate}
 
-\subsection*{Reglas de cómputo de SIGUIENTE}
+\subsection*{Algoritmo de Siguiente}
 
 \begin{enumerate}
   \item Se incorpora $\$$ a $\text{SIGUIENTE}(S)$, donde $S$ denota el símbolo inicial de

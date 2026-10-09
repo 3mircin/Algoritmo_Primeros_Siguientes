@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1791570216.1481 "InformeActividadesEq1.xdv" "InformeActividadesEq1.pdf" "InformeActividadesEq1" 1791570216.71796 0
-  "InformeActividadesEq1.xdv" 1791570216.11312 56060 b45b379b4eb921592eaebaae3e2161c9 "xelatex"
+["xdvipdfmx"] 1791581696.06912 "InformeActividadesEq1.xdv" "InformeActividadesEq1.pdf" "InformeActividadesEq1" 1791581696.63247 0
+  "InformeActividadesEq1.xdv" 1791581696.03273 58716 69fc3d3efd8aa19084ccd9cc7c344619 "xelatex"
   (generated)
   "InformeActividadesEq1.pdf"
   (rewritten before read)
-["xelatex"] 1791570215.59997 "/Users/toronjo/Documents/UTM/5to Semestre/Compiladores/2do Parcial/Algoritmo_Primeros_Siguientes/reporte/informe/InformeActividadesEq1.tex" "InformeActividadesEq1.xdv" "InformeActividadesEq1" 1791570216.71674 0
-  "/Users/toronjo/Documents/UTM/5to Semestre/Compiladores/2do Parcial/Algoritmo_Primeros_Siguientes/reporte/informe/InformeActividadesEq1.tex" 1791570214.84192 1856 0914fdd3138d34a5608d09448a6ee36d ""
+["xelatex"] 1791581695.56734 "/Users/toronjo/Documents/UTM/5to Semestre/Compiladores/2do Parcial/Algoritmo_Primeros_Siguientes/reporte/informe/InformeActividadesEq1.tex" "InformeActividadesEq1.xdv" "InformeActividadesEq1" 1791581696.63107 0
+  "/Users/toronjo/Documents/UTM/5to Semestre/Compiladores/2do Parcial/Algoritmo_Primeros_Siguientes/reporte/informe/InformeActividadesEq1.tex" 1791581558.46139 1891 7fd8e6b8660c81b8a3fe647ca01ac1a2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm" 1254269338 12076 b54175e02101bea1addf6b2d0197ed12 ""
@@ -175,22 +175,24 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "InformeActividadesEq1.aux" 1791570216.11172 1665 dcf8d0f3849754b1dbcb5a65bab801e0 "xelatex"
-  "InformeActividadesEq1.out" 1791570216.11272 1036 40dede8d3bf2f7dcce1fd43674c239a1 "xelatex"
-  "InformeActividadesEq1.tex" 1791570214.84192 1856 0914fdd3138d34a5608d09448a6ee36d ""
+  "InformeActividadesEq1.aux" 1791581696.03149 1584 b81e980a9038912df1cfa5584de1bfb6 "xelatex"
+  "InformeActividadesEq1.out" 1791581696.03254 1036 1ec2aba94509c3909081488973205ff4 "xelatex"
+  "InformeActividadesEq1.tex" 1791581558.46139 1891 7fd8e6b8660c81b8a3fe647ca01ac1a2 ""
+  "InformeActividadesEq1.toc" 1791581696.0327 451 51a2e3cd2fb7a6b7436765bfc4f5906f "xelatex"
   "imagenes/logo-utm.png" 1791535330.71633 175090 6332490dfd2e649847e00262d181249e ""
   "imagenes/modelo_programa_principal copy.png" 1791569558.77375 102899 b33fd9eb980fa0e4530e08ade980e4bf ""
-  "secciones/analisis.tex" 1791567089.75679 2478 972f4f88418e5226c06af533057a7595 ""
+  "secciones/analisis.tex" 1791581560.80515 2460 36a7acc801c0bb4ff88f2e4d778131c7 ""
   "secciones/asignacion.tex" 1791570098.46428 2331 da21db9586d7c7892a9927c2a8b5c56d ""
   "secciones/avances.tex" 1791569493.60367 6720 e21c5c2494ccbe62229c99713fe4696c ""
-  "secciones/clases_metodos.tex" 1791535493.46844 4944 ca7abe4ab99ebcd79e597fe1a8522b90 ""
+  "secciones/clases_metodos.tex" 1791581695.48822 4954 0d1b391074f8ab6717c7e0189d0e515d ""
   "secciones/conclusiones.tex" 1791567071.11732 2006 6d338fe9db72ba03d42801ba6f36763c ""
-  "secciones/modelo.tex" 1791569884.84678 1669 ab42b496ef23be5cb2fbdcdd5f1a1574 ""
+  "secciones/modelo.tex" 1791581656.49222 1587 df209a9af7e3d671bda92a0856b222e0 ""
   "secciones/portada.tex" 1791567646.91852 2740 2d58e4bc6f214f6b58420233176ac697 ""
   "secciones/referencias.tex" 1791535258.60518 507 94c282a16f0d27bc89e172365eea3d3f ""
   (generated)
   "InformeActividadesEq1.aux"
   "InformeActividadesEq1.log"
   "InformeActividadesEq1.out"
+  "InformeActividadesEq1.toc"
   "InformeActividadesEq1.xdv"
   (rewritten before read)
